@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Keyboard Test">
+
+    <title>Keyboard Test</title>
+    <meta name="description" content="A simple page for testing your keyboard. Created by TheFeerid">
+    <link rel="image_src" href="meta_image.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="nav-box">
+            <div class="nav-box-l">
+                <a href="index.html" class="nav-a reset-btn">
+                    <svg fill="#000000" width="24px" height="24px" viewBox="0 0 1920 1920"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="17.279999999999998">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M960 0v112.941c467.125 0 847.059 379.934 847.059 847.059 0 467.125-379.934 847.059-847.059 847.059-467.125 0-847.059-379.934-847.059-847.059 0-267.106 126.607-515.915 338.824-675.727v393.374h112.94V112.941H0v112.941h342.89C127.058 407.38 0 674.711 0 960c0 529.355 430.645 960 960 960s960-430.645 960-960S1489.355 0 960 0"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <p>Reset</p>
+                </a>
+            </div>
+            <h1>Test Your Keyboard</h1>
+            <div class="empty-item"></div>
+        </div>
+        <div class="container">
+            <div class="contaner-norm">
+                <div class="key-line key-line-1">
+                    <kbd data-key="Escape" data-key="esc" class="escape">Esc</kbd>
+                    <kbd data-key="F1">F1</kbd>
+                    <kbd data-key="F2">F2</kbd>
+                    <kbd data-key="F3">F3</kbd>
+                    <kbd data-key="F4">F4</kbd>
+                    <kbd data-key="F5">F5</kbd>
+                    <kbd data-key="F6">F6</kbd>
+                    <kbd data-key="F7">F7</kbd>
+                    <kbd data-key="F8">F8</kbd>
+                    <kbd data-key="F9">F9</kbd>
+                    <kbd data-key="F10">F10</kbd>
+                    <kbd data-key="F11">F11</kbd>
+                    <kbd data-key="F12">F12</kbd>
+                    <kbd data-key="Pause" class="two-line">Pause <br> Break</kbd>
+                    <kbd data-key="PrintScreen" class="two-line">PrtSc <br> SysRq</kbd>
+                    <kbd data-key="Insert">Ins</kbd>
+                    <kbd data-key="Delete">Del</kbd>
+                </div>
+
+                <div class="key-line key-line-2">
+                    <kbd data-key="Backquote">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">~</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">`</div>
+                            <div class="kbd-bottom-r">Ё</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit1">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">!</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">1</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit2">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">@</div>
+                            <div class="kbd-top-r">"</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">2</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit3">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">#</div>
+                            <div class="kbd-top-r">№</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">3</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit4">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">$</div>
+                            <div class="kbd-top-r">;</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">4</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit5">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">%</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">5</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit6">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">^</div>
+                            <div class="kbd-top-r">:</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">6</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit7">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&</div>
+                            <div class="kbd-top-r">?</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">7</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit8">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">*</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">8</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit9">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x28;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">9</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Digit0">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x29;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">0</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Minus">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">_</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">-</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Equal">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">+</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">=</div>
+                            <div class="kbd-bottom-r"></div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Backspace" class="bckspc">Backspace</kbd>
+                </div>
+
+                <div class="key-line key-line-3">
+                    <kbd data-key="Tab" class="mytab">
+                        <svg viewBox="0 0 24 24" id="left-right-arrow" xmlns="http://www.w3.org/2000/svg"
+                            class="icon line">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <polyline id="primary" points="17 19 20 16 17 13"
+                                    style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                                </polyline>
+                                <path id="primary-2" data-name="primary" d="M20,16H4M4,8H20"
+                                    style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                                </path>
+                                <polyline id="primary-3" data-name="primary" points="7 5 4 8 7 11"
+                                    style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;">
+                                </polyline>
+                            </g>
+                        </svg>Tab
+                    </kbd>
+                    <kbd data-key="KeyQ">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">Q</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Й</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyW">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">W</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ц</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyE">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">E</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">У</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyR">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">R</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">К</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyT">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">T</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Е</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyY">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">Y</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Н</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyU">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">U</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Г</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyI">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">I</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ш</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyO">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">O</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Щ</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyP">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">P</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">З</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="BracketLeft">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x7b;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">&#x5b;</div>
+                            <div class="kbd-bottom-r">Х</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="BracketRight">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x7d;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">&#x5d;</div>
+                            <div class="kbd-bottom-r">Ъ</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Backslash" class="line-3-last">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">|</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">\</div>
+                            <div class="kbd-bottom-r">/</div>
+                        </div>
+                    </kbd>
+                </div>
+
+                <div class="key-line key-line-4">
+                    <kbd data-key="CapsLock" class="capslock">Caps Lock</kbd>
+                    <kbd data-key="KeyA">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">A</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ф</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyS">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">S</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ы</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyD">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">D</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">В</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyF">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">F</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">А</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyG">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">G</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">П</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyH">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">H</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Р</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyJ">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">J</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">О</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyK">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">K</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Л</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyL">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">L</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Д</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Semicolon">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">:</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">;</div>
+                            <div class="kbd-bottom-r">Ж</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Quote">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">"</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">'</div>
+                            <div class="kbd-bottom-r">Э</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Enter" class="enter">Enter</kbd>
+                </div>
+
+                <div class="key-line key-line-5">
+                    <kbd data-key="ShiftLeft" class="shift-l">
+                        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 511.95 511.95" xml:space="preserve" stroke="#ffffff" stroke-width="50">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M476.847,216.373L263.513,3.04c-4.267-4.053-10.88-4.053-15.04,0L35.14,216.373c-4.16,4.16-4.16,10.88-0.107,15.04 c2.027,2.027,4.8,3.2,7.573,3.2h128V501.28c0,5.867,4.8,10.667,10.667,10.667h149.333c5.867,0,10.667-4.8,10.667-10.667V234.613 h128c5.867,0,10.667-4.8,10.667-10.667C479.94,221.067,478.873,218.4,476.847,216.373z M330.607,213.28 c-5.867,0-10.667,4.8-10.667,10.667v266.667h-128V223.947c0-5.867-4.8-10.667-10.667-10.667H68.42L255.94,25.547L443.567,213.28 H330.607z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        Shift</kbd>
+                    <kbd data-key="KeyZ">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">Z</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Я</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyX">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">X</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ч</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyC">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">C</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">С</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyV">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">V</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">М</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyB">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">B</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">И</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyN">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">N</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Т</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="KeyM">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">M</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r">Ь</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Comma">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x2039;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">,</div>
+                            <div class="kbd-bottom-r">Б</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Period">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">&#x203A;</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">.</div>
+                            <div class="kbd-bottom-r">Ю</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="Slash">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">?</div>
+                            <div class="kbd-top-r">'</div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">/</div>
+                            <div class="kbd-bottom-r">.</div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="ShiftRight" class="shift-r">Shift</kbd>
+                </div>
+
+                <div class="key-line key-line-6">
+                    <kbd data-key="ControlLeft" class="ctrl-l">Ctrl</kbd>
+                    <kbd data-key="MetaLeft" class="win">
+                        <svg width="12px" height="12px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <defs> </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7439.000000)"
+                                        fill="#fff">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M13.1458647,7289.43426 C13.1508772,7291.43316 13.1568922,7294.82929 13.1619048,7297.46884 C16.7759398,7297.95757 20.3899749,7298.4613 23.997995,7299 C23.997995,7295.84873 24.002005,7292.71146 23.997995,7289.71311 C20.3809524,7289.71311 16.7649123,7289.43426 13.1458647,7289.43426 M4,7289.43526 L4,7296.22153 C6.72581454,7296.58933 9.45162907,7296.94113 12.1724311,7297.34291 C12.1774436,7294.71736 12.1704261,7292.0908 12.1704261,7289.46524 C9.44661654,7289.47024 6.72380952,7289.42627 4,7289.43526 M4,7281.84344 L4,7288.61071 C6.72581454,7288.61771 9.45162907,7288.57673 12.1774436,7288.57973 C12.1754386,7285.96017 12.1754386,7283.34361 12.1724311,7280.72405 C9.44461153,7281.06486 6.71679198,7281.42567 4,7281.84344 M24,7288.47179 C20.3879699,7288.48578 16.7759398,7288.54075 13.1619048,7288.55175 C13.1598997,7285.88921 13.1598997,7283.22967 13.1619048,7280.56914 C16.7689223,7280.01844 20.3839599,7279.50072 23.997995,7279 C24,7282.15826 23.997995,7285.31353 24,7288.47179"
+                                                id="windows-[#174]"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </kbd>
+                    <kbd data-key="AltLeft" class="alt-l">Alt</kbd>
+                    <kbd data-key="Space" class="space"></kbd>
+                    <kbd data-key="AltRight" class="alt-r">Alt</kbd>
+                    <kbd data-key="ContextMenu" class="sel">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.05">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 11.25H16.5V12.75H10.5V11.25Z"
+                                    fill="#fff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 7.5H16.5V9H10.5V7.5Z"
+                                    fill="#fff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 15H16.5V16.5H10.5V15Z"
+                                    fill="#fff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 7.5H9V9H7.5V7.5Z" fill="#fff">
+                                </path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 11.25H9V12.75H7.5V11.25Z"
+                                    fill="#fff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 15H9V16.5H7.5V15Z" fill="#fff">
+                                </path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.75 4.5L4.5 3.75H19.5L20.25 4.5V19.5L19.5 20.25H4.5L3.75 19.5V4.5ZM5.25 5.25V18.75H18.75V5.25H5.25Z"
+                                    fill="#fff"></path>
+                            </g>
+                        </svg>
+                    </kbd>
+                    <kbd data-key="ControlRight" class="ctrl-r">Ctrl</kbd>
+                    <div class="btn-set">
+                        <kbd data-key="ArrowLeft">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.048">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.3508 12.7499L11.2096 17.4615L10.1654 18.5383L3.42264 11.9999L10.1654 5.46148L11.2096 6.53833L6.3508 11.2499L21 11.2499L21 12.7499L6.3508 12.7499Z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <div class="middle">
+                            <kbd data-key="ArrowUp">
+                                <svg fill="#000000" width="64px" height="64px" viewBox="-8.5 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>arrow-top</title>
+                                        <path
+                                            d="M15.16 13.16l-6.84-6.84c-0.28-0.28-0.84-0.24-1.16 0.080l-6.92 6.76c-0.32 0.32-0.32 0.84 0 1.2 0.32 0.32 0.84 0.32 1.2 0l5.44-5.44v16.2c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-16.2l5.44 5.44c0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24 0.32-0.32 0.32-0.84-0.040-1.2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </kbd>
+                            <kbd data-key="ArrowDown">
+                                <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000"
+                                    stroke-width="0.00024000000000000003">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M17.5431 14.2672C17.8288 13.9673 17.8172 13.4926 17.5172 13.2069C17.2173 12.9212 16.7426 12.9328 16.4569 13.2328L17.5431 14.2672ZM11.4569 18.4828C11.1712 18.7827 11.1828 19.2574 11.4828 19.5431C11.7827 19.8288 12.2574 19.8172 12.5431 19.5172L11.4569 18.4828ZM11.4569 19.5172C11.7426 19.8172 12.2173 19.8288 12.5172 19.5431C12.8172 19.2574 12.8288 18.7827 12.5431 18.4828L11.4569 19.5172ZM7.5431 13.2328C7.25744 12.9328 6.78271 12.9212 6.48276 13.2069C6.18281 13.4926 6.17123 13.9673 6.4569 14.2672L7.5431 13.2328ZM11.25 19C11.25 19.4142 11.5858 19.75 12 19.75C12.4142 19.75 12.75 19.4142 12.75 19H11.25ZM12.75 5C12.75 4.58579 12.4142 4.25 12 4.25C11.5858 4.25 11.25 4.58579 11.25 5H12.75ZM16.4569 13.2328L11.4569 18.4828L12.5431 19.5172L17.5431 14.2672L16.4569 13.2328ZM12.5431 18.4828L7.5431 13.2328L6.4569 14.2672L11.4569 19.5172L12.5431 18.4828ZM12.75 19V5H11.25V19H12.75Z"
+                                            fill="#ffffff"></path>
+                                    </g>
+                                </svg>
+                            </kbd>
+                        </div>
+                        <kbd data-key="ArrowRight">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="0.048">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.6492 11.2501L12.7904 6.53852L13.8346 5.46167L20.5774 12.0001L13.8346 18.5385L12.7904 17.4617L17.6492 12.7501H3V11.2501H17.6492Z"
+                                        fill="#fff"></path>
+                                </g>
+                            </svg>
+                        </kbd>
+                    </div>
+                </div>
+            </div>
+            <div class="container-numlk">
+                <div class="key-line-1 key-num-lk">
+                    <kbd data-key="NumLock" class="two-line">NumLk <br> <span class="clr-green">ScrLk</span></kbd>
+                    <kbd data-key="NumpadDivide">/</kbd>
+                    <kbd data-key="NumpadMultiply">*</kbd>
+                </div>
+                <div class="key-line-2 key-num-lk">
+                    <kbd data-key="NumpadDecimal">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">.</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l">Del</div>
+                            <div class="kbd-bottom-r"> </div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="NumpadAdd">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">+</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r"> </div>
+                        </div>
+                    </kbd>
+                    <kbd data-key="NumpadSubtract">
+                        <div class="kbd-top">
+                            <div class="kbd-top-l">-</div>
+                            <div class="kbd-top-r"></div>
+                        </div>
+                        <div class="kbd-bottom">
+                            <div class="kbd-bottom-l"></div>
+                            <div class="kbd-bottom-r"> </div>
+                        </div>
+                    </kbd>
+                </div>
+                <div class="key-line-3 key-num-lk">
+                    <kbd data-key="Numpad7">7</kbd>
+                    <kbd data-key="Numpad8">8</kbd>
+                    <kbd data-key="Numpad9">9</kbd>
+                </div>
+                <div class="key-line-4 key-num-lk">
+                    <kbd data-key="Numpad4">4</kbd>
+                    <kbd data-key="Numpad5">5</kbd>
+                    <kbd data-key="Numpad6">6</kbd>
+                </div>
+                <div class="key-line-5 key-num-lk">
+                    <kbd data-key="Numpad1">1</kbd>
+                    <kbd data-key="Numpad2">2</kbd>
+                    <kbd data-key="Numpad3">3</kbd>
+                </div>
+                <div class="key-line-6 key-num-lk">
+                    <kbd data-key="Numpad0">0</kbd>
+                    <kbd data-key="NumpadEnter" class="enter-r">Enter</kbd>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

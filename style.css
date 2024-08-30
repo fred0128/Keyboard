@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    scale: 1;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    stroke: #fff;
+}
+
+.win svg {
+    width: 20px;
+    height: 20px;
+}
+
+.shift-l svg {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 4px;
+}
+
+main h1 {
+    font-size: 48px;
+    color: #444444;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-a {
+    padding: 4px 12px 4px 4px;
+    font-size: 20px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 99px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-a svg {
+    font-size: 18px;
+    background-color: #fff;
+    color: #444;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.reset-btn svg {
+    fill: #000;
+}
+
+.reset-btn {
+    transition: .1s all ease-in-out;
+}
+
+.reset-btn:hover {
+    background-color: #90ee90;
+    color: #444444;
+}
+
+.nav-a i {
+    font-size: 18px;
+    background-color: #fff;
+    color: #444;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.nav-box .empty-item {
+    width: 100px;
+    height: 20px;
+}
+
+.toggleKeyboard {
+    padding: 4px 4px 4px 4px;
+    box-shadow: 0 0 4px rgb(51, 255, 0);
+    font-size: 20px;
+    background-color: rgb(51, 255, 0);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 99px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    outline: none;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.nav-box-l {
+    display: flex;
+    gap: 6px;
+}
+
+.clickedpower {
+    background-color: red;
+    box-shadow: 0 0 4px red;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        scale: .8;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        scale: .7;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        scale: .5;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        scale: .4;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        scale: .3;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        scale: .25;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    main {
+        scale: .2;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    main {
+        scale: .15;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    main {
+        scale: .1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.contaner-norm {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+kbd {
+    background-color: #444;
+    border-radius: 6px;
+    border: 1px solid #000;
+    box-shadow:
+        2px 2px 2px rgba(0, 0, 0, 0.4),
+        0 -2px 0 0 #000 inset,
+        0 2px 0 0 #666 inset;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 8px 20px 8px 11px;
+    white-space: nowrap;
+}
+
+kbd:not(.active):hover {
+    background-color: #add8e6;
+    color: #333;
+}
+
+kbd.active {
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.2),
+        0 -2px 0 0 #666 inset,
+        0 2px 0 0 #222 inset;
+    ;
+}
+
+.two-line {
+    display: flex;
+    width: fit-content;
+}
+
+.key-line {
+    display: flex;
+    gap: 4px;
+}
+
+.key-line-1 {
+    display: flex;
+    gap: 4px;
+}
+
+kbd.two-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 21px;
+}
+
+kbd span.clr-green {
+    color: greenyellow;
+}
+
+.key-line-2 {
+    display: flex;
+    gap: 4px;
+}
+
+.key-line-2 kbd {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-line kbd>div>div {
+    border-radius: 8px;
+}
+
+.key-line kbd .kbd-top {
+    display: flex;
+}
+
+.key-line kbd .kbd-top div {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-line kbd .kbd-bottom {
+    display: flex;
+}
+
+.key-line kbd .kbd-bottom div {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-line div {
+    width: fit-content;
+}
+
+.key-line-2 kbd.bckspc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+}
+
+.key-line .escape {
+    width: 60px;
+}
+
+.key-line-3 {
+    display: flex;
+    gap: 4px;
+    width: fit-content;
+}
+
+.key-line-3 kbd {
+    display: flex;
+    flex-direction: column;
+}
+
+.key-line-3>kbd {
+    display: flex;
+    width: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60px;
+    padding: unset;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-line-3 .mytab {
+    padding: unset;
+    padding-left: 10px;
+    width: 80px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.key-line-3 .line-3-last {
+    width: 80px;
+    padding: unset;
+    display: flex;
+}
+
+.key-line-4 .capslock {
+    height: 60px;
+    width: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.key-line kbd {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+}
+
+.key-line .enter {
+    width: 124px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.key-line .shift-l {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px;
+    gap: 4px;
+}
+
+.key-line .shift-r {
+    width: 155px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.key-line-1 kbd {
+    width: unset;
+    height: unset;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.key-line-5 kbd {
+    display: flex;
+    padding: unset;
+}
+
+.key-line-4 kbd {
+    padding: unset;
+}
+
+.clr-green {
+    color: greenyellow;
+}
+
+.key-line .ctrl-l {
+    width: 94px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.key-line-6 kbd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-line .space {
+    width: 317px;
+}
+
+.key-line .space i {
+    transform: rotate(180deg);
+    font-size: 22px;
+}
+
+.btn-set {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-set kbd {
+    width: 48px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle>kbd {
+    display: flex;
+    height: 28px;
+    padding: unset;
+    font-size: 12px;
+}
+
+.btn-set>kbd {
+    display: flex;
+    padding: unset;
+    font-size: 12px;
+}
+
+.win {
+    font-size: 22px;
+}
+
+.key-line-1 kbd {
+    height: 40px;
+}
+
+.key-line-1.key-num-lk kbd {
+    height: 40px;
+    width: 60px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.key-line-1.key-num-lk kbd.two-line {
+    display: flex;
+    justify-content: center;
+    padding: unset;
+}
+
+.key-num-lk kbd {
+    display: flex;
+    padding: unset;
+}
+
+.key-num-lk kbd>div {
+    display: flex;
+}
+
+.key-num-lk kbd>div>div {
+    width: 30px;
+    height: 30px;
+    padding: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-numlk {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.key-num-lk .kbd-top-l {
+    font-size: 18px;
+}
+
+.key-num-lk {
+    display: flex;
+    gap: 4px;
+}
+
+.key-num-lk kbd {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key-num-lk .enter-r {
+    width: 124px;
+}
+
+.active {
+    background-color: lightblue;
+    color: #444444;
+}
+
+.active svg,
+.active path,
+.active polyline {
+    fill: #444;
+    stroke: #444;
+}
+
+.clicked {
+    background-color: lightgreen;
+    color: #444444;
+}
+
+.clicked svg,
+.clicked path,
+.clicked polyline {
+    fill: #444;
+    stroke: #444;
+}
+
+.disabled {
+    background-color: #333;
+}
+
+.key-line .win {
+    width: 80px;
+}
+
+.key-line .alt-l {
+    width: 80px;
+}
+
+.btn-set svg {
+    width: 20px;
+    height: 20px;
+}
